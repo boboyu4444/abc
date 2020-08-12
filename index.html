@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"></meta>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>My_Web_Project</title>
+        <script type = "text/javascript">
+            window.onload = function(){
+                var box = document.getElementById("box");
+                box.scrollTop = 0;
+            };
+            var timer;
+            function init(){
+                timer = document.getElementById("timer");
+                window.setInterval(countdown, 1000);
+            }
+            function countdown(){
+                timer.innerHTML = timer.innerHTML - 1;
+                if(timer.innerHTML > 0){
+                }
+                else{
+                    document.location = "https://www.google.com/"
+                }
+            }
+        </script>
+        <style type = "text/css">
+        table{
+            width:400px; border:1px solid #888888;
+        }
+        td{
+            border:1px solid #888888; padding:10px;
+        }
+        tr:nth-child(odd){
+            background-color:#a9a9a9; color:#000000;
+        }
+        .head{
+            background-color:#003344; color:white; font-weight:bold; font-size:30px;
+            text-align:center; padding:10px;
+        }
+        .content{
+            width:1000px; margin-left:auto; margin-right:auto;
+        }
+        .scrop{
+            border:1px solid #000000; width:1920px; height:1080px;
+            overflow:auto;
+        }
+        .box{
+            width:280px; padding:10px; margin:10px; background-color:white;
+            display:inline-block; vertical-align:top;
+            text-align:center; height:250px; line-height:30px
+        }
+        .title{font-weight:bold
+        }
+        @media screen and (max-width:600px){
+            .head{font-size:24px;}
+            .content{width:100%; text-align:center;}
+        }
+        </style>
+    </head>
+    <body style = "margin:0px; background-color:#dcdcdc;" onload="init();">
+        <span id="timer">600</span>
+        <div id = "scrop" class = "scrop">
+            <div class = "head"><marquee direction="right" height="30" scrollamount="5" behavior="alternate">自我介紹(注意!此網頁在10分鐘後將自動跳轉)</marquee></div>
+            <img src = "images/Me.jpg" width = "400" height = "500" alt = "My Picture">
+                <div class = "box">
+                    <div class = "title">我的基本資料</div>
+                    <div>我的名字叫做 "劉得群"。</div>
+                    <div>我來自 "新竹"。</div>
+                    <div>我的生日在 "86年11月12日"。</div>
+                    <div>我的學歷是 "新竹清大附中光復中學"。</div>
+                </div>
+                <div class = "box">
+                    <div class = "title">我的個人興趣</div>
+                    <div>我喜歡 "血型是O型的女生"。</div>
+                </div>
+                <div class = "box">
+                    <div class = "title">我的經歷</div>
+                    <div>我曾在 "7-11便利商店做PT,3年"。</div>
+                    <div>我曾在 "New Balance做PT,2年"。</div>
+                    <div>我曾在 "Merrell做正職,半年"。</div>
+                </div>
+                <div class = "box">
+                    <div class = "title">自傳</div>
+                    <div>我從小單親家庭長大，個性外向，擅長社交所以從事的都是服務業，興趣是看電影跟
+                        收集球鞋和衣服，我也對徑賽方面很有興趣，對短跑很在行，更喜歡出國旅遊，我想探
+                        索世界的角落。夢想是解鎖一次櫻花妹和娶個辣老婆。
+                    </div>
+                </div>
+                <hr></hr>
+                <center><video width="500" height="300" controls>
+                    <source src="videos/Video.mp4" type="video/mp4" />
+                    <source src="videos/Video.ogv" type="video/ogg" />
+                    影片無法播放，請改用別的瀏覽器，或將影片
+                    <a href="https://sendvid.com/fa93k5w9">下載</a>後再播放。
+                </video>
+                </center>
+        <h1><center>歡迎與我聯絡</center></h1>
+        <p><center>我的信箱: boboyu4444@gmail.com</center></p>
+        <p><center>我的手機: 0932790454</center></p>
+        <audio autoplay = "autoplay" controls = "controls" loop = "loop" preload = "auto"
+             src = "videos/music.mp3" >
+        </audio >
+        </div>
+    </body>
+</html> 
